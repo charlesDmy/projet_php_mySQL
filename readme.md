@@ -17,9 +17,10 @@ Site internet de resell de sneakers.
 Un vehicule sera composée de :
  
 - Modèle* : varchar (petite zone de texte)
-- pointure : nombre
+- pointure : int
 - Description* : texte(grande zone de texte)
 - Image* : url varchar (petite zone de texte)
+- id : int
 * Champs obligatoires
  
 ## Etapes du projet
