@@ -6,7 +6,7 @@ Site internet de resell de sneakers.
  
 ### Front-office
 - Accueil : Liste de sneakers à acheter
-- Page de détail : Présentation des chaussures (etat, prix)
+- Page de détail : Présentation des chaussures (etat, prix, poiture, nom)
  
 ### Back-office
 - Page de création de réalisation (si possible)
@@ -17,8 +17,8 @@ Site internet de resell de sneakers.
 Un vehicule sera composée de :
  
 - Modèle* : varchar (petite zone de texte)
+- pointure : nombre
 - Description* : texte(grande zone de texte)
-- Année* : date
 - Image* : url varchar (petite zone de texte)
 * Champs obligatoires
  
