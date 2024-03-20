@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>STOCKZ</h1>
+
+    <h2>Ajout récent :</h2>
+
+</body>
+</html>
+
 <?php
 // Paramètres de connexion
 $serveur = "localhost";
@@ -29,16 +46,18 @@ mysqli_close($connexion);
 
 if ($resultat) {
     foreach ($resultat as $chaussure) {
-            echo 'ID :' . $chaussure['id'] .'
-            <br>' . 'Modèle : ' . $chaussure['modele'] . '
-            <br>' . 'Etat : ' . $chaussure ['etat'] .'
-            <br>' . 'Pointure : ' . $chaussure['pointure'] . '
-            <br>' . 'Prix : ' . $chaussure['prix'] . ' €'. '
-            <br>' . 'URL : ' . $chaussure['URL'] . '
-            <hr>' ;
-    }
+        echo '<a href="page_detail.php?id='. $chaussure['id'] .' " >';
+            echo 'ID :' . $chaussure['id'] .'<br>
+            ' . 'Modèle : ' . $chaussure['modele'] . '<br>
+            ' . 'Etat : ' . $chaussure ['etat'] . '<br>
+            ' . 'Prix : ' . $chaussure['prix'] . ' €'. '<br>
+            '  . '<img title="chaussure" src=' . $chaussure['URL'] . '></img>' . '<hr>
+            ' ;
+
+        echo'</a>';
+        }
         echo "<br>";
-    
+          
 } else {
     echo "0 résultats";
 }
