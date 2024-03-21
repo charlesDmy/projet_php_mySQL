@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="style_detail.css">
 </head>
 <body>
-</body>
-</html>
 <?php
 
 $serveur = "localhost";
@@ -42,7 +40,6 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
         echo '<img title="chaussure" src=' . $chaussure['URL'] . '></img>' . '<br>
         ' . 'Modèle : ' . $chaussure['modele'] . '<br>
         ' . 'Etat : ' . $chaussure ['etat'] . '<br>
-        ' . 'Pointure : ' . $chaussure['pointure'] . '<br>
         ' . 'Prix : ' . $chaussure['prix'] . ' €';
     } else {
         echo "Aucun résultat trouvé pour cet ID.";
@@ -53,8 +50,17 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 
 ?>
 
+
 <form method="post">
-    <button type="submit" name="submit">Acheter à $chaussure['prix']</button>
+    <label for="choix">Pointure :</label>
+    <select name="choix">
+        <option value="option1">47</option>
+        <option value="option2">41</option>
+        <option value="option3">42</option>
+    </select>
+    <input type="submit" name="submit" value="Sélectionner">
 </form>
-mysqli_close($connexion);
-?>
+
+
+</body>
+</html>

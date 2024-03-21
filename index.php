@@ -12,8 +12,6 @@
 
     <h2>Ajout récent :</h2>
 
-</body>
-</html>
 
 <?php
 // Paramètres de connexion
@@ -63,3 +61,15 @@ if ($resultat) {
 }
 
 ?>
+<a href="formulaire_vendre.php">
+    <button>VENDRE</button>  
+</a>
+
+
+
+
+
+
+
+</body>
+</html>
