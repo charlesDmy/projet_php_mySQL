@@ -8,7 +8,7 @@
 
 </head>
 <body>
-    <h1>STOCKZ</h1>
+    <h1 class="titre">STOCKZ</h1>
 
     <h2>Ajout récent :</h2>
 
@@ -26,7 +26,7 @@ $mot_de_passe, $base_de_donnees);
 if (!$connexion) {
 die("Échec de la connexion : " . mysqli_connect_error());
 } else {
-echo "Connexion réussie à la base de données.";
+//echo "Connexion réussie à la base de données.";
 }
 
 // Exécuter une requête SELECT
@@ -34,7 +34,7 @@ $sql = "SELECT * FROM chaussure";
 $resultat = mysqli_query($connexion, $sql);
 // Vérifier si la requête a réussi
 if ($resultat) {
-print_r($resultat);
+//print_r($resultat);
 } else {
 echo "Erreur : " . mysqli_error($connexion);
 }
@@ -49,7 +49,7 @@ if ($resultat) {
             ' . 'Modèle : ' . $chaussure['modele'] . '<br>
             ' . 'Etat : ' . $chaussure ['etat'] . '<br>
             ' . 'Prix : ' . $chaussure['prix'] . ' €'. '<br>
-            '  . '<img title="chaussure" src=' . $chaussure['URL'] . '></img>' . '<hr>
+            '  . '<img title="chaussure" src=' . $chaussure['URL'] . '></img>' . '<br>
             ' ;
 
         echo'</a>';
