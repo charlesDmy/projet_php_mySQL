@@ -1,5 +1,7 @@
 body {
-    background-color: lightgrey;
+    background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -8,8 +10,23 @@ img {
     max-height: 200px;
     width: auto; 
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+
+.boutonVendre {
+    margin: 15px;
+    padding: 10px;
+}
+
+.imgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}

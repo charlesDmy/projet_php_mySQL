@@ -58,13 +58,12 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
         <option value="option2">41</option>
         <option value="option3">42</option>
     </select>
-    <input type="submit" name="submit" value="Sélectionner">
 </form>
-
+<br>
 <?php
 // id='. $chaussure (permet de mettre l'url pour que la page de modification la recupère et me permet connaitre l'id de la chaussure) 
 echo '<a href="page_detail_modification.php?id='.$id.'">
-    <button>modification</button>
+        <button>modification</button>
 
 </a>';
 ?>

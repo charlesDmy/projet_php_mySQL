@@ -47,17 +47,17 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 ?>
     <form action="#" method="post">
         <div>
-            <label for="modele">Modèle* : </label>
+            <label for="modele">Modèle : </label>
             <?php
-           echo '<input type="" name="modele" id="modele" value="'.$modele.'" required>'
+           echo '<input type="" name="modele" id="modele" value="'.$modele.'">'
             ?>
         </div>
 
         <br>
 
         <div>
-            <label for="etat">Etat* :</label>
-                <select name="etat" id="etat" required>
+            <label for="etat">Etat :</label>
+                <select name="etat" id="etat" >
                     <option value="Neuf">Neuf</option>
                     <option value="Usées">Usée</option>
                 </select>
@@ -66,15 +66,15 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
         <br>
 
         <div>
-            <label for="pointure">Pointure* :</label>
-            <input type="" name="pointure" id="pointure" required>
+            <label for="pointure">Pointure :</label>
+            <input type="" name="pointure" id="pointure" >
         </div>
 
         <br>
 
         <div>
-            <label for="prix">Prix* :</label>
-            <input type="" name="prix" id="prix" required>
+            <label for="prix">Prix :</label>
+            <input type="" name="prix" id="prix" >
         </div>
 
         <br>
