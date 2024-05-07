@@ -1,6 +1,10 @@
+*::before, *::after {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
+    font-family: "Jaro", sans-serif;
 }
 
 nav {
@@ -9,29 +13,36 @@ nav {
     background-color: aliceblue;
 }
 
-.accueil {
-    margin: 15px;
-    padding: 10px;
-}
-
-.boutonVendre {
-    margin: 15px;
-    padding: 10px;
-}
-
 a {
     color: black;
     text-decoration: none;
 }
 
+h1 {
+    color: blueviolet;
+}
+
+.boutonVendre {
+    margin: 15px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.boutonModification {
+    margin: 15px;
+    padding: 10px;
+}
+
+
 .titreAccueil {
     margin-left: 20px;
 }
-     
-.container {
+
+.containerFormulaire {
     display: flex;
     flex-direction: column;
-    max-width:800px ;
+    max-width:400px ;
     margin: 0 auto;
     color:black;
+    padding-top: 30px;
 }
